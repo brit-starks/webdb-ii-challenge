@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/brit-starks/webdb-ii-challenge#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "express-router": "0.0.1",
+    "helmet": "^3.21.2",
     "knex": "^0.20.3",
     "sqlite3": "^4.1.0"
   }

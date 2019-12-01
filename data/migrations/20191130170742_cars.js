@@ -4,10 +4,10 @@ exports.up = function(knex) {
     tbl.increments('VIN').unique().notNullable();
     tbl.string('make').notNullable();
     tbl.string('model').notNullable();
-    tbl.integer('milage');
+    tbl.integer('milage').notNullable();
   })
 };
 
 exports.down = function(knex) {
-  return knex.schema.dropTableIfExists('car-dealer');
+  return knex.schema.dropTableIfExists('cars');
 };
